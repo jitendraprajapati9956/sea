@@ -112,6 +112,12 @@
 .services__title{
     font-size:42px;
 }
+.services__grid{
+    grid-template-columns:1fr;
+}
 
+.service-card{
+    width:100%;
+}
 }
 

@@ -83,5 +83,23 @@
 .about__copy h2{
     font-size:40px;
 }
+.about__stats{
 
+flex-direction:column;
+
+gap:25px;
+
+}
+
+.about__copy{
+
+width:100%;
+
+}
+
+.about__copy h2{
+
+font-size:34px;
+
+}
 }

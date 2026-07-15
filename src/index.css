@@ -14,11 +14,6 @@
   --font-body: "Inter", sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 html {
   scroll-behavior: smooth;
@@ -30,6 +25,15 @@ body {
   background: var(--white);
   -webkit-font-smoothing: antialiased;
 }
+html,
+body {
+  overflow-x: hidden;
+}
+
+* {
+  max-width: 100%;
+}
+
 
 img {
   max-width: 100%;
