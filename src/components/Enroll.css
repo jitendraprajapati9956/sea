@@ -1,0 +1,77 @@
+.enroll {
+  padding: 100px 0;
+}
+
+.enroll__inner {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 60px;
+}
+
+.enroll__copy h2 {
+  font-size: 30px;
+  margin: 14px 0 12px;
+}
+
+.enroll__copy p {
+  color: var(--ink-soft);
+  font-size: 14px;
+  max-width: 280px;
+}
+
+.enroll__form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border: 1px solid var(--border);
+  padding: 32px;
+  background: #fff;
+}
+
+.enroll__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.enroll__form input,
+.enroll__form select,
+.enroll__form textarea {
+  border: 1px solid var(--border);
+  padding: 12px 14px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--ink);
+  background: var(--paper);
+  outline: none;
+}
+
+.enroll__form input:focus,
+.enroll__form select:focus,
+.enroll__form textarea:focus {
+  border-color: var(--red);
+}
+
+.enroll__form button {
+  align-self: flex-start;
+  border: none;
+}
+
+.enroll__note {
+  font-family: var(--font-display);
+  font-size: 12.5px;
+  color: var(--dark);
+}
+
+.enroll__note--error {
+  color: #c23b22;
+}
+
+@media (max-width: 860px) {
+  .enroll__inner {
+    grid-template-columns: 1fr;
+  }
+  .enroll__row {
+    grid-template-columns: 1fr;
+  }
+}
