@@ -1,6 +1,7 @@
 .services {
-   padding:100px 0;
-   background:#fff;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
 }
 
 .services__header{

@@ -2,8 +2,16 @@
   position: relative;
   color: #fff;
   overflow: hidden;
+  
+}
+.hero h1{
+    font-size:clamp(32px,7vw,60px);
+    line-height:1.2;
 }
 
+.hero p{
+    font-size:16px;
+}
 .hero__bg {
   position: absolute;
   inset: 0;
