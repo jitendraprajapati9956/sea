@@ -48,9 +48,10 @@ button {
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+   width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:0 20px;
 }
 
 .section-eyebrow {
@@ -107,8 +108,22 @@ h1, h2, h3, h4 {
   background: rgba(255, 255, 255, 0.1);
 }
 
-@media (max-width: 720px) {
-  .container {
-    padding: 0 18px;
-  }
+@media (max-width:768px){
+
+    h1{
+        font-size:38px;
+    }
+
+    h2{
+        font-size:30px;
+    }
+
+    p{
+        font-size:16px;
+    }
+
+    .container{
+        padding:0 18px;
+    }
+
 }

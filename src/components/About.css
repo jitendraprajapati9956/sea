@@ -12,7 +12,7 @@
 
 .about__image img {
   width: 100%;
-  height: 420px;
+  height: auto;
   object-fit: cover;
   border-radius: 4px;
 }
@@ -67,18 +67,21 @@
   font-size: 14px;
   color: #666;
 }
+@media(max-width:768px){
 
-@media (max-width: 992px) {
-  .about__inner {
-    grid-template-columns: 1fr;
-  }
+.about__inner{
+    display:flex;
+    flex-direction:column-reverse;
+    gap:30px;
+}
 
-  .about__copy h2 {
-    font-size: 36px;
-  }
+.about__image img{
+    width:100%;
+    height:auto;
+}
 
-  .about__stats {
-    flex-direction: column;
-    gap: 20px;
-  }
+.about__copy h2{
+    font-size:40px;
+}
+
 }

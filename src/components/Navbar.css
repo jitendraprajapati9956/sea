@@ -82,23 +82,14 @@
   background: #fff;
 }
 
-@media (max-width: 900px) {
-  .navbar__links {
-    position: absolute;
-    top: 88px;
-    left: 0;
-    right: 0;
-    background: var(--dark);
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px 24px 28px;
-    gap: 20px;
-    display: none;
-  }
-  .navbar__links.is-open {
-    display: flex;
-  }
-  .navbar__toggle {
-    display: flex;
-  }
+@media(max-width:768px){
+
+.logo img{
+    width:45px;
+}
+
+.navbar{
+    padding:15px 20px;
+}
+
 }

@@ -157,7 +157,15 @@
   .footer {
     padding-left: 15px;
     padding-right: 15px;
-  }
+  }.footer-container{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:35px;
+}
+
+.footer-links{
+    text-align:left;
+}
 
   .featured__title,
   .about__copy h2 {

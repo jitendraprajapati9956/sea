@@ -112,18 +112,28 @@
   font-size: 13px;
   line-height: 1.4;
 }
+@media (max-width:768px){
 
-@media (max-width: 900px) {
-  .hero__title {
-    font-size: 40px;
-  }
-  .hero__strip-inner {
-    grid-template-columns: 1fr;
-  }
-  .hero__strip-item {
-    border-right: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  }
+.hero__content{
+    margin-left:0;
+    max-width:100%;
+    padding:80px 20px;
+    min-height:60vh;
+}
+
+.hero__title{
+    font-size:36px;
+    line-height:1.2;
+}
+
+.hero__desc{
+    font-size:16px;
+}
+
+.hero__bg{
+    background-position:center;
+}
+
 }
 /*
 
