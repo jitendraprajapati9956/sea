@@ -1,38 +1,28 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
+import Courses from "./components/Courses";
 import About from "./components/About";
 import Featured from "./components/Featured";
 import StatsCta from "./components/StatsCta";
+import Enroll from "./components/Enroll";
 import Footer from "./components/Footer";
-
 import ContactPage from "./pages/ContactPage";
-
-function HomePage() {
+function App() {
   return (
     <>
+      <Navbar />
       <Hero />
       <Services />
+      {/* <Courses /> */}
       <About />
       <Featured />
       <StatsCta />
-    </>
-  );
-}
-
-function App() {
-  return (
-    <HashRouter>
-      <Navbar />
-
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/contact" element={<ContactPage />} />
-      </Routes>
-
+      {/* <Enroll /> */}
       <Footer />
-    </HashRouter>
+    </>
+    
   );
 }
 

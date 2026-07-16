@@ -2,14 +2,13 @@ import { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 const links = [
-  { label: "Home", href: "/" },
+  { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
   { label: "Projects", href: "#work" },
   { label: "Blog", href: "#courses" },
-  { label: "Contact", href: "/contact" }, 
+  { label: "Contact Us", href: "#enroll" },
 ];
-
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
