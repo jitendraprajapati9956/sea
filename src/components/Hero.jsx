@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { PenTool, HardHat, GraduationCap } from "lucide-react";
 import "./Hero.css";
 
@@ -7,12 +8,28 @@ const highlights = [
   { icon: GraduationCap, title: "Certification", desc: "Industry-recognized completion" },
 ];
 
+const heroImages = [
+  "/homebanner.jpg",
+  "/1.jpg",
+  "/2.jpg",
+  "/3.jpg",
+  "/4.jpg",
+];
 export default function Hero() {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % heroImages.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
   return (
     <section id="home" className="hero">
       <div className="hero__bg"
         style={{
-          backgroundImage: "url('/homebanner.jpg')",
+          backgroundImage: `url(${heroImages[currentImage]})`,
         }} >
 
         <div className="hero__overlay" />
@@ -31,7 +48,7 @@ export default function Hero() {
           From AutoCAD basics to advanced structural software — practical, project-based
           training that gets you site-ready and job-ready.
         </p>
-             <div className="hero__strip">
+        <div className="hero__strip">
           <div className="container hero__strip-inner">
             {highlights.map((h) => (
               <div className="hero__strip-item" key={h.title}>
@@ -53,7 +70,7 @@ export default function Hero() {
           </a>
 
         </div>
-   
+
       </div>
 
 

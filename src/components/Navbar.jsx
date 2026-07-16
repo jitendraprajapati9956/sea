@@ -1,14 +1,15 @@
 import { useState } from "react";
 import "./Navbar.css";
-
+import { Link } from "react-router-dom";
 const links = [
-  { label: "Home", href: "#home" },
+  { label: "Home", href: "/" },
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
-  { label: "Projects", href: "#courses" },
+  { label: "Projects", href: "#work" },
   { label: "Blog", href: "#courses" },
-  { label: "Contact Us", href: "#enroll" },
+  { label: "Contact", href: "/contact" }, 
 ];
+
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -20,7 +21,7 @@ export default function Navbar() {
           <span className="navbar__logo-mark">SE</span>
           <span className="navbar__logo-text">
             SHILP
-            <small>ENGINEER ACADEMY</small>
+            <small>ENGINEERS</small>
           </span>
         </a>
 
