@@ -31,8 +31,8 @@ export default function Footer() {
           <div className="navbar__logo footer__logo">
             <span className="navbar__logo-mark">SE</span>
             <span className="navbar__logo-text">
-              SHILP ENGINEERS 
-              <small>ACADEMY</small>
+              SHILP  
+              <small>ENGINEERS</small>
             </span>
           </div>
           <p className="footer__desc">
@@ -92,7 +92,7 @@ export default function Footer() {
       </div>
 
       <div className="footer__bottom">
-        <span>© 2026  SHILP ENGINEERS  Academy. All Rights Reserved.</span>
+        <span>© 2026  SHILP ENGINEERS . All Rights Reserved.</span>
         <div className="footer__bottom-links">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms &amp; Conditions</a>

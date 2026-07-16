@@ -14,9 +14,10 @@ function App() {
     <>
       <Navbar />
       <Hero />
+      <About />
       <Services />
       {/* <Courses /> */}
-      <About />
+      
       <Featured />
       <StatsCta />
       {/* <Enroll /> */}
