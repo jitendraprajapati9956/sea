@@ -15,15 +15,13 @@ export default function About() {
           <span className="section-eyebrow">ABOUT US</span>
 
           <h2>
-            DESIGNING SPACES,
+            Engineering Expertise 
             <br />
-            BUILDING TRUST
+            You Can Trust 
           </h2>
 
           <p>
-            DraftLine Civil Academy provides industry-oriented training in
-            AutoCAD, Revit, STAAD Pro and ETABS. Our focus is on practical
-            learning, real projects and career growth.
+           At Shilp Engineers, we offer comprehensive engineering, planning, and design services for residential, commercial, and land development projects. Our experienced team ensures every project is executed with precision, compliance, and quality. 
           </p>
 
           <div className="about__stats">

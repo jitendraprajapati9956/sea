@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Navbar.css";
+import logo from "../assets/favicon.svg";
 import { Link } from "react-router-dom";
 const links = [
   { label: "Home", href: "#home" },
@@ -17,13 +18,13 @@ export default function Navbar() {
     <header className="navbar">
       <div className="container navbar__inner">
         <a href="#home" className="navbar__logo">
-          <span className="navbar__logo-mark">SE</span>
+          <img src={logo} alt="Shilp Engineers Logo" />
           <span className="navbar__logo-text">
             SHILP
             <small>ENGINEERS</small>
           </span>
         </a>
-
+        
         <nav className={`navbar__links ${open ? "is-open" : ""}`}>
           {links.map((l) => (
             <a key={l.href} href={l.href} onClick={() => setOpen(false)}>

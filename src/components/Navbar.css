@@ -81,7 +81,16 @@
   height: 2px;
   background: #fff;
 }
+.navbar__logo {
+  display: flex;
+  align-items: center;
+}
 
+.navbar__logo img {
+  height: 40px;   /* જરૂર મુજબ 55-80px કરો */
+  width: auto;
+  display: block;
+}
 @media(max-width:768px){
 
 .logo img{

@@ -36,17 +36,16 @@ export default function Hero() {
       </div>
 
       <div className="container hero__content">
-        <span className="hero__tag">We Teach. We Train. We Build Careers.</span>
+        <span className="hero__tag">Architecture  | Construction | Interior Design |    Land Survey | Project Consultancy  </span>
         <h1 className="hero__title">
-          DESIGN YOUR
+          Complete
           <br />
-          <span className="hero__title-accent">FUTURE</span> IN
+          <span className="hero__title-accent"> Engineering   </span>
           <br />
-          CIVIL ENGINEERING
+          & Design Solutions
         </h1>
         <p className="hero__desc">
-          From AutoCAD basics to advanced structural software — practical, project-based
-          training that gets you site-ready and job-ready.
+          Shilp Engineers provides end-to-end engineering and construction solutions—from planning and structural design to surveying, project supervision, interiors, and turnkey construction. We combine technical expertise with practical execution to deliver quality projects.
         </p>
         {/* <div className="hero__strip">
           <div className="container hero__strip-inner">
