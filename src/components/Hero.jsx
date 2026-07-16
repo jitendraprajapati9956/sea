@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import { PenTool, HardHat, GraduationCap } from "lucide-react";
 import "./Hero.css";
 
-// const highlights = [
-//   { icon: PenTool, title: "AutoCAD Drafting", desc: "Precision 2D drawing & site plans" },
-//   { icon: HardHat, title: "Site Training", desc: "Real construction site practice" },
-//   { icon: GraduationCap, title: "Certification", desc: "Industry-recognized completion" },
-// ];
+const highlights = [
+  { icon: PenTool, title: "AutoCAD Drafting", desc: "Precision 2D drawing & site plans" },
+  { icon: HardHat, title: "Site Training", desc: "Real construction site practice" },
+  { icon: GraduationCap, title: "Certification", desc: "Industry-recognized completion" },
+];
 
 const heroImages = [
   "/homebanner.jpg",
@@ -50,7 +50,7 @@ export default function Hero() {
         </p>
         <div className="hero__strip">
           <div className="container hero__strip-inner">
-            /* {highlights.map((h) => (
+             {highlights.map((h) => (
               <div className="hero__strip-item" key={h.title}>
                 <h.icon size={30} strokeWidth={1.5} color="#e42313" />
                 <div>
@@ -58,18 +58,17 @@ export default function Hero() {
                   <p>{h.desc}</p>
                 </div>
               </div>
-            ))} */
+            ))} 
           </div>
         </div>
-        {/* <div className="hero__actions">
+   <div className="hero__actions">
           <a href="#courses" className="btn btn-primary">
             Explore Courses
           </a>
           <a href="#enroll" className="btn btn-outline">
             Enroll Now
           </a>
-
-        </div> */}
+        </div> 
 
       </div>
 
